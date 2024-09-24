@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className='w-full flex justify-center '>
-      <div className='w-1/2'>
+      <div className='w-full sm:w-1/2'>
         <h1 className='text-center text-4xl'>Game</h1>
         <p>Bạn đang có {time} s</p>
         <p>Bạn đang có {point} điểm:</p>
