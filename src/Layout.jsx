@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
 
 const Layout = ({ tab, setpoint, index, settime, start }) => {
-    const checkIcon =tab?.srcIcon;
+    const checkIcon = tab?.srcIcon;
     const [showBonus, setShowBonus] = useState(false);
     const [showPoint, setshowPoint] = useState(0);
-    const audio1 = new Audio('/public/zeeee.mp3');
-    const audio2 = new Audio('/public/fail.mp3');
+    const audio1 = new Audio('./public/zeeee.mp3');
+    const audio2 = new Audio('./public/fail.mp3');
 
     const HandleTotalPoint = () => {
-        if (tab.srcIcon[index] === "/public/trungthuvang.png") {
+        if (tab.srcIcon[index] === "./public/trungthuvang.png") {
             setpoint((pre) => pre + 1);
             setShowBonus(true); //
             setshowPoint(1)
             audio1.play();
 
-        } else if (tab.srcIcon[index] === "/public/trungthuxanh.png") {
+        } else if (tab.srcIcon[index] === "./public/trungthuxanh.png") {
             setpoint((pre) => pre + 2);
             setShowBonus(true); //
             setshowPoint(2)
