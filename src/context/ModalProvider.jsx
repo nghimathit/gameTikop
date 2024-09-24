@@ -8,7 +8,7 @@ const ModalProvider = ({ children }) => {
     const [content, setContent] = useState();
     //   không cho cuộn trang web 
     useEffect(() => {
-        const audio = new Audio('/votay.mp3');
+        const audio = new Audio('./votay.mp3');
         if (isShow) {
             document.body.style.overflow = "hidden"
             audio.play(); 

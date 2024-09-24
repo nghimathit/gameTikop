@@ -5,15 +5,15 @@ import { ModalContext } from './context/ModalProvider';
 import DoneGame from './DoneGame';
 
 const initialTab = [
-  { id: 1, src: "/tikop.jpg", },
-  { id: 2, src: "/tikop.jpg", },
-  { id: 3, src: "/tikop.jpg", },
-  { id: 4, src: "/tikop.jpg", },
-  { id: 5, src: "/tikop.jpg", },
-  { id: 6, src: "/tikop.jpg", },
-  { id: 7, src: "/tikop.jpg", },
-  { id: 8, src: "/tikop.jpg", },
-  { id: 9, src: "/tikop.jpg", srcIcon: ["/trungthuvang.png", "/trungthuxanh.png", "/trungthuden.png"] }
+  { id: 1, src: "./tikop.jpg", },
+  { id: 2, src: "./tikop.jpg", },
+  { id: 3, src: "./tikop.jpg", },
+  { id: 4, src: "./tikop.jpg", },
+  { id: 5, src: "./tikop.jpg", },
+  { id: 6, src: "./tikop.jpg", },
+  { id: 7, src: "./tikop.jpg", },
+  { id: 8, src: "./tikop.jpg", },
+  { id: 9, src: "./tikop.jpg", srcIcon: ["./trungthuvang.png", "./trungthuxanh.png", "./trungthuden.png"] }
 ];
 
 function App() {
