@@ -8,3 +8,9 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+.burst {
+  transform: scale(3);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}

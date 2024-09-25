@@ -52,13 +52,13 @@ function App() {
   }, [time, start])
 
   return (
-    <div className='w-full flex justify-center '>
+    <div className='w-full flex justify-center ' onContextMenu={(e) => e.preventDefault()}>
       <div className='w-full sm:w-1/2'>
         <h1 className='text-center text-4xl'>Game</h1>
         <p>Bạn đang có {time} s</p>
         <p>Bạn đang có {point} điểm:</p>
         {start == false && <div div className='flex items-center justify-center'>
-          <button className='bg-green-300 rounded-lg px-2 mb-3 text-lg hover:bg-green-500' onClick={() => {
+          <button className='bg-green-300 rounded-lg px-4 mt-3 mb-3 text-lg hover:bg-green-500' onClick={() => {
             setstart(true)
             setpoint(0)
           }}>Bắt Đầu</button></div>}
